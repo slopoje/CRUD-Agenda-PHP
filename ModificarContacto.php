@@ -30,9 +30,9 @@ $fila = $resultado->fetch_array();
 <h5>MODIFICAR CONTACTO</h5>
 <form action="updateContacto.php"  method="get">  
   <p>Nombre: <input type="text" name="nombre" readonly="readonly" value=<?php echo "'".$fila[0]."'"?> ></p>
-  <p>Teléfono: <input type="text" name="telefono" value=<?php echo $fila[1]?> ></p>
-  <p>Dirección: <input type="text" name="direccion" value=<?php echo $fila[2]?> ></p>
-  <p>Correo electrónico: <input type="text" name="email" value=<?php echo $fila[3]?> ></p>
+  <p>Teléfono: <input type="text" name="telefono" value='<?php echo $fila[1]?>' ></p>
+  <p>Dirección: <input type="text" name="direccion" value='<?php echo $fila[2]?>' ></p>
+  <p>Correo electrónico: <input type="text" name="email" value='<?php echo $fila[3]?>' ></p>
   <p><input type="submit" value="Modificar"></p>
 </form>
 
